@@ -12,7 +12,7 @@ const Welcome = () => {
   // }
   const sendRequest = async () => {
     const res = await axios
-      .get("https://odd-teal-llama-garb.cyclic.app/api/user", {
+      .get("https://super-kimono-fish.cyclic.app/api/user", {
         withCredentials: true,
       })
       .catch((err) => {

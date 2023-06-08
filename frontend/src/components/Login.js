@@ -19,7 +19,7 @@ const Login = () => {
       withCredentials: true
    })
      await axiosInstance
-      .post("https://odd-teal-llama-garb.cyclic.app/api/login", {
+      .post("https://super-kimono-fish.cyclic.app/api/login", {
         email: inputs.email,
         password: inputs.password,
       },)
