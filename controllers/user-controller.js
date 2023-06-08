@@ -90,7 +90,7 @@ const login = async (req, res, next) => {
     // httpOnly: true,
     // sameSite: "none", //idk
     path: "/",
-    expires: new Date(Date.now() + 1000 * 30),
+    expires: new Date(Date.now() + 1000 * 300),
     httpOnly: true,
     sameSite: "none",
     secure: true,
