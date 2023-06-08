@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 // let firstRender=true;//using this in useEffect we want to have token in first go and refresh token in other
+axios.defaults.withCredentials = true;
 const Welcome = () => {
   const [user, setUser] = useState();
   // const refreshToken=async()=>{
@@ -14,6 +15,10 @@ const Welcome = () => {
     const res = await axios
       .get("https://super-kimono-fish.cyclic.app/api/user", {
         withCredentials: true,
+      //   headers: {
+      //     'Access-Control-Allow-Origin' : '*',
+      //     'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',   
+      // }
       })
       .catch((err) => {
         console.log(err);
